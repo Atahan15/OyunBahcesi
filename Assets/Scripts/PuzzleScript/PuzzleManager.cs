@@ -1,11 +1,8 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.EventSystems;
 using UnityEngine;
-using UnityEngine.UIElements;
-using Unity.VisualScripting;
 
 
 
@@ -13,73 +10,45 @@ public class PuzzleManager : MonoBehaviour
 {
     public static PuzzleManager Instance;
 
-    /*[SerializeField]*/ private Transform blankTransform;
-    private Vector3 blankCorrectPositionLocal;
-    /*[SerializeField]*/ public List<GameObject> allPieces;
-    private List<GameObject> gamePieces;
+    [SerializeField] private Transform blankTransform;
+    private Vector3 blankCorrectPosition;
+    [SerializeField] private GameObject[] pieces;
     [SerializeField] private TMPro.TextMeshProUGUI Counter;
     [SerializeField] private GameObject WinPanel;
 
-    private int CurrentLevel;
-    private int moveCount = 0;
+    public int moveCount = 0;
 
     private UnityEngine.Camera mCamera;
-    private Dictionary<Transform, Vector2> correctPositionsLocal = new Dictionary<Transform, Vector2>();
-    
+    private Dictionary<Transform, Vector2> correctPositions = new Dictionary<Transform, Vector2>();
+
 
     void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(this.gameObject);
         //
-        allPieces = new List<GameObject>();
-        gamePieces = new List<GameObject>();
+
         mCamera = UnityEngine.Camera.main;
     }
 
-    
     private void Start()
     {
-        
-    }
-    IEnumerator LateStart()
-    {
-        yield return null;
-        Inýt();
+        Init();
+
     }
 
-    public void Inýt()
+    private void Init()
     {
-        Debug.Log("initçalýþtý");
-        correctPositionsLocal.Clear();
-        gamePieces.Clear();
-
-        foreach (GameObject piece in allPieces)
+        foreach (GameObject piece in pieces)
         {
-            //allPieces.first?
-
-            if (!piece.CompareTag("Blank"))
-            {
-                gamePieces.Add(piece);
-                correctPositionsLocal[piece.transform] = piece.transform.localPosition;
-                Debug.Log("Doðru pozisyon " + piece.name + " =" + piece.transform.localPosition);
-            }
-            else
-            {
-                blankTransform=piece.transform;
-                
-                
-            }
+            correctPositions[piece.transform] = piece.transform.position;
 
         }
 
-        blankCorrectPositionLocal = blankTransform.localPosition;
+        blankCorrectPosition = blankTransform.position;
         Shuffle();
         moveCount = 0;
     }
-    
-
-
 
     private void Update()
     {
@@ -90,14 +59,14 @@ public class PuzzleManager : MonoBehaviour
             if (hit)
             {
 
-                if (Vector2.Distance(blankTransform.localPosition, hit.transform.localPosition) < 2.9f)
+                if (Vector2.Distance(blankTransform.position, hit.transform.position) <= 3)
                 {
                     StartCoroutine(Swap(hit.transform));
                     //ChangeColor(hit.collider.gameObject); IsInCorrectPosition returns before swap because of 1 frame wait
                 }
             }
         }
-        
+
     }
 
     private bool IsMouseOverUI()
@@ -106,33 +75,33 @@ public class PuzzleManager : MonoBehaviour
     }
 
     private IEnumerator Swap(Transform clickedPiece)
-    {                                                                    
-        Vector3 firstPosition = clickedPiece.localPosition;
-        Vector3 lastPosition = blankTransform.localPosition;
+    {
+        Vector2 firstPosition = clickedPiece.position;
+        Vector2 lastPosition = blankTransform.position;
         float duration = 0.10f;
         float t = 0f;
 
         while (t < duration)
         {
-            clickedPiece.localPosition = Vector3.Lerp(firstPosition, lastPosition, t / duration);
+            clickedPiece.position = Vector2.Lerp(firstPosition, lastPosition, t / duration);
             t += Time.deltaTime;
             yield return null;
         }
 
-        clickedPiece.localPosition = lastPosition;
-        blankTransform.localPosition = firstPosition;
+        clickedPiece.position = lastPosition;
+        blankTransform.position = firstPosition;
 
         ChangeColor(clickedPiece.gameObject);
         CheckWin();
 
         moveCount++;
-        Counter.text=moveCount.ToString();
+        Counter.text = moveCount.ToString();
     }
 
     public bool IsInCorrectPosition(Transform piece)
     {
-        return correctPositionsLocal.TryGetValue(piece, out Vector2 correctPos) &&
-               Vector2.Distance(piece.localPosition, correctPos) < 0.02f;
+        return correctPositions.TryGetValue(piece, out Vector2 correctPos) &&
+               Vector2.Distance(piece.position, correctPos) < 0.01f;
 
     }
 
@@ -148,53 +117,49 @@ public class PuzzleManager : MonoBehaviour
 
     private void ChangeAllColor()
     {
-        foreach (GameObject piece in gamePieces)
+        foreach (GameObject piece in pieces)
         {
             ChangeColor(piece);
         }
     }
 
     public void Shuffle()
-     {
-        Debug.Log(blankCorrectPositionLocal.ToString()+"blank local pozisyon");
-        blankTransform.localPosition = blankCorrectPositionLocal;
+    {
+
+
+
+        blankTransform.position = blankCorrectPosition;
         List<int> list = new List<int>();
         int random;
 
-        while (list.Count!=correctPositionsLocal.Count)
+        while (list.Count != pieces.Length)
         {
-            random=Random.Range(0, correctPositionsLocal.Count);
+            random = Random.Range(0, pieces.Length);
             if (!list.Contains(random))
                 list.Add(random);
         }
 
         int a = 0;
-        foreach (GameObject piece in gamePieces)
+        foreach (GameObject piece in pieces)
         {
 
-            piece.transform.localPosition = correctPositionsLocal.ElementAt(list[a]).Value;
+            piece.transform.position = correctPositions.ElementAt(list[a]).Value;
             a++;
 
         }
-
         ChangeAllColor();
         moveCount = 0;
         Counter.text = moveCount.ToString();
 
-        
-        
+
+
     }
 
-
-
-
-    
-
-   //fix
+    //fix
     private void CheckWin()
     {
         int checkedCount = 0;
-        foreach (GameObject piece in gamePieces)
+        foreach (GameObject piece in pieces)
         {
             if (piece.GetComponent<SpriteRenderer>().color == new Color(0.7f, 1f, 0.7f, 1f))
             {
@@ -205,7 +170,7 @@ public class PuzzleManager : MonoBehaviour
                 checkedCount = 0;
             }
         }
-        if (checkedCount==gamePieces.Count)
+        if (checkedCount == pieces.Length)
         {
 
             WinPanel.SetActive(true);
