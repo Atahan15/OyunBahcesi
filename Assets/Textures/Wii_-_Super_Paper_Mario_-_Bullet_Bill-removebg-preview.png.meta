@@ -1,0 +1,307 @@
+fileFormatVersion: 2
+guid: 5afdf6f342d414b40b3c3ddcb15545a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3699914456739608235
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_0
+  - first:
+      213: 5820914878759073640
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_1
+  - first:
+      213: -1910048673251756182
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_2
+  - first:
+      213: 3656436246659710916
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_3
+  - first:
+      213: 2334197378013913969
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_4
+  - first:
+      213: 7304254368851508151
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_5
+  - first:
+      213: -6174977964370086213
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_6
+  - first:
+      213: -4628917098086072027
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_7
+  - first:
+      213: -3357201206191134341
+    second: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 146
+        width: 129
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7426e0393b3664482aaebb7cbb3709
+      internalID: 545876964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 130
+        width: 138
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9344aa7ffa04842862a45f392ddf1b
+      internalID: 1944517689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 124
+        width: 125
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5eece1e3c55ced4a834567ade5af68d
+      internalID: -1499859837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 19
+        width: 129
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca260bbe79104d4bb3099396ac67223
+      internalID: 1701205952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 22
+        width: 129
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d97da737425d94bb92e4af3f3162e5
+      internalID: -1663728916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 19
+        width: 129
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955bbf3fce93c6945a226b6afd348e2d
+      internalID: -1419156753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 22
+        width: 129
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21a20de8e6ee0943a8e8a2fed3f9ab0
+      internalID: 1122196712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0aa921bc7d5558147920f603393cdae3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_0: 545876964
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_1: 1944517689
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_2: -1499859837
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_3: 217768545
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_4: -683610226
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_5: 1701205952
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_6: -1663728916
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_7: -1419156753
+      Wii_-_Super_Paper_Mario_-_Bullet_Bill-removebg-preview_8: 1122196712
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: e7dcc23a920b1ba4abb7b36e5183ab8a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2476227912055399321
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_0
+  - first:
+      213: 3943210889170019457
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_1
+  - first:
+      213: -4037205296216564489
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_2
+  - first:
+      213: 9039113385655935407
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_3
+  - first:
+      213: -5863106763470464693
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_4
+  - first:
+      213: -6628297557714962440
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_5
+  - first:
+      213: -9044456450791456723
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_6
+  - first:
+      213: -8196230277149519313
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_7
+  - first:
+      213: -6761419025536080389
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_8
+  - first:
+      213: 1518526830396835781
+    second: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 732
+        width: 220
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76cd70765dba2add0800000000000000
+      internalID: -2476227912055399321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 733
+        width: 243
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1846e63696919b630800000000000000
+      internalID: 3943210889170019457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_2
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 733
+        width: 230
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc9fa15c27f8f7c0800000000000000
+      internalID: -4037205296216564489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_3
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 721
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa12084abb1617d70800000000000000
+      internalID: 9039113385655935407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 413
+        width: 211
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b491723767f02aea0800000000000000
+      internalID: -5863106763470464693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_5
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 413
+        width: 185
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f77fce4d7e8304a0800000000000000
+      internalID: -6628297557714962440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_6
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 413
+        width: 216
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20c51017c2ab7280800000000000000
+      internalID: -9044456450791456723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_7
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 88
+        width: 215
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2293390df3214e80800000000000000
+      internalID: -8196230277149519313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_8
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 87
+        width: 216
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5aa55483d9a22a0800000000000000
+      internalID: -6761419025536080389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_9
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 87
+        width: 218
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c704b35b14e21510800000000000000
+      internalID: 1518526830396835781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_0: -2476227912055399321
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_1: 3943210889170019457
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_2: -4037205296216564489
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_3: 9039113385655935407
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_4: -5863106763470464693
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_5: -6628297557714962440
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_6: -9044456450791456723
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_7: -8196230277149519313
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_8: -6761419025536080389
+      freepik__nine-different-pixel-art-animals-in-a-white-backgr__91248_9: 1518526830396835781
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
