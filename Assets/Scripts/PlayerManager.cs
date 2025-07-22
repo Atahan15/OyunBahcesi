@@ -3,7 +3,6 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     private Rigidbody2D rb;
-    [SerializeField] private bool godMod;
     [SerializeField] public float health = 100;
     [SerializeField] SubGameStarter gameStarter;
     private bool isdead = false;
@@ -31,16 +30,8 @@ public class PlayerManager : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Kinematic;
         isdead = true;
         SoundManager.Instance.GameOverFX();
-
-        if(!godMod)
-        {
-            gameStarter.pause();
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            CharacterReset();
-        }
+        gameStarter.Pause();
+        gameObject.SetActive(false);
 
     }
     public void CharacterReset()
@@ -62,7 +53,7 @@ public class PlayerManager : MonoBehaviour
         }
         else if (other.gameObject.tag == "Enemy")
         {
-            GotHit(other.gameObject.GetComponent<EnemyManager>().damage);
+            GotHit(other.gameObject.GetComponent<EnemyManager>().damage); //data modeli deðiþtir
         }
     }
    

@@ -50,7 +50,6 @@ public class EnemyManager : MonoBehaviour
         enemyHealth = 100;
         spriteRenderer.color = Color.white;
         isdead = false;
-        Debug.Log(this.gameObject.name);
         transform.position = firstPosition;
 
     }
@@ -60,7 +59,8 @@ public class EnemyManager : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         spriteRenderer.enabled = false;
         gameObject.GetComponent<Collider2D>().enabled = false;
-        
+        AchievementManager.Instance.UnlockAchievement("Acýmasýz");
+
     }
     private void Appear()
     {

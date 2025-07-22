@@ -9,7 +9,7 @@ public class PlatformDestroy : MonoBehaviour
     void Start()
     {
         spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
-        Debug.Log("bulunan sprite renderer=" + spriteRenderers.Length);
+        
     }
 
     // Update is called once per frame

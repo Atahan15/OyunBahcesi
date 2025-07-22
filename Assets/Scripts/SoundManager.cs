@@ -26,7 +26,7 @@ public class SoundManager : MonoBehaviour
         
         if (!isVolumeOpen) soundObject.volume = 0;
         if (isVolumeOpen) soundObject.volume = 1;
-        Debug.Log(soundObject.volume + "  sb deðeri");
+        
     }
     //public void PlaySoundClip(AudioClip clip,Transform transform,float volume)
     //{
@@ -39,7 +39,7 @@ public class SoundManager : MonoBehaviour
     //}
     private void PitchRandomizer()
     {
-        Debug.Log(soundObject.pitch.ToString());
+        
         float randPitch = Random.Range(0.5f, 2f);
         soundObject.pitch = randPitch;
     }

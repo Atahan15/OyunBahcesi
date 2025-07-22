@@ -10,8 +10,6 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        
-
         currentLevel = level.currentLevel;
     }
 
@@ -27,7 +25,7 @@ public class LevelManager : MonoBehaviour
             MapSpawner(currentLevel + 1);
             level.currentLevel = currentLevel;
         }
-        else Debug.Log("level kalmadý");
+        
     }
     
     public void ResetMap()
@@ -50,7 +48,7 @@ public class LevelManager : MonoBehaviour
             Destroy(loadedMap);
             
         }
-        else Debug.Log("ÖncekiMapYok");
+        
     }
 
     private void OnApplicationQuit()

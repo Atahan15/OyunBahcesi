@@ -10,6 +10,7 @@ public class PuzzleManager : MonoBehaviour
 {
     public static PuzzleManager Instance;
 
+    [SerializeField] private PuzzleSFX sfx;
     [SerializeField] private Transform blankTransform;
     private Vector3 blankCorrectPosition;
     [SerializeField] private GameObject[] pieces;
@@ -26,15 +27,13 @@ public class PuzzleManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(this.gameObject);
-        //
-
         mCamera = UnityEngine.Camera.main;
     }
 
     private void Start()
     {
         Init();
-
+        
     }
 
     private void Init()
@@ -76,6 +75,7 @@ public class PuzzleManager : MonoBehaviour
 
     private IEnumerator Swap(Transform clickedPiece)
     {
+        
         Vector2 firstPosition = clickedPiece.position;
         Vector2 lastPosition = blankTransform.position;
         float duration = 0.10f;
@@ -91,13 +91,21 @@ public class PuzzleManager : MonoBehaviour
         clickedPiece.position = lastPosition;
         blankTransform.position = firstPosition;
 
-        ChangeColor(clickedPiece.gameObject);
+        ChangeColor(clickedPiece.gameObject,true);
         CheckWin();
+        moveCounter();
 
+    }
+    private void moveCounter()
+    {
         moveCount++;
         Counter.text = moveCount.ToString();
+        if (moveCount == 100)
+        {
+            AchievementManager.Instance.UnlockAchievement("Puzzle Dahisi");
+        }
+        
     }
-
     public bool IsInCorrectPosition(Transform piece)
     {
         return correctPositions.TryGetValue(piece, out Vector2 correctPos) &&
@@ -105,13 +113,19 @@ public class PuzzleManager : MonoBehaviour
 
     }
 
-    public void ChangeColor(GameObject piece)
+    public void ChangeColor(GameObject piece, bool playMoveSFX)
     {
         if (IsInCorrectPosition(piece.transform))
         {
             piece.GetComponent<SpriteRenderer>().color = new Color(0.7f, 1f, 0.7f, 1f); //optimize with dictionary?
+            sfx.CorrectPlaceSFX();
             return;
         }
+        if (playMoveSFX)
+        {
+            sfx.PieceMoveSFX();
+        }
+        
         piece.GetComponent<SpriteRenderer>().color = Color.white;
     }
 
@@ -119,14 +133,12 @@ public class PuzzleManager : MonoBehaviour
     {
         foreach (GameObject piece in pieces)
         {
-            ChangeColor(piece);
+            ChangeColor(piece,false);
         }
     }
 
     public void Shuffle()
     {
-
-
 
         blankTransform.position = blankCorrectPosition;
         List<int> list = new List<int>();
@@ -147,14 +159,16 @@ public class PuzzleManager : MonoBehaviour
             a++;
 
         }
+
         ChangeAllColor();
         moveCount = 0;
         Counter.text = moveCount.ToString();
+        sfx.PieceMoveSFX();
 
-
+        
 
     }
-
+    
     //fix
     private void CheckWin()
     {
@@ -172,9 +186,8 @@ public class PuzzleManager : MonoBehaviour
         }
         if (checkedCount == pieces.Length)
         {
-
+            sfx.WinSFX();
             WinPanel.SetActive(true);
         }
     }
 }
-

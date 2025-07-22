@@ -6,12 +6,11 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float speed;
-    [Range(1,10)][SerializeField]private float jumpForce;
+    [Range(1,10)] [SerializeField] private float jumpForce;
     private float move;
     private Animator animator;
     public ContactFilter2D contactFilter;
-    [SerializeField]
-    private SubGameStarter starterpanel;
+    [SerializeField] private SubGameStarter starterpanel;
 
     private PlayerManager playerManager;
     
@@ -29,6 +28,8 @@ public class Player : MonoBehaviour
         contactFilter.useNormalAngle = true;
         contactFilter.minNormalAngle = 80f;
         contactFilter.maxNormalAngle = 100f;
+
+        
     }
 
     // Update is called once per frame
@@ -40,13 +41,6 @@ public class Player : MonoBehaviour
         Rotation();
         AltitudeCheck();
         
-
-
-
-
-
-
-
     }
     
     private void Movement()
@@ -59,6 +53,7 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
+        
         if (Input.GetButton("Jump") && IsGrounded)
         {
             rb.linearVelocityY = jumpForce;
@@ -89,9 +84,10 @@ public class Player : MonoBehaviour
         if (this.transform.position.y < -6.3f)
         {
             playerManager.Die();
-            starterpanel.pause();
-
+            AchievementManager.Instance.UnlockAchievement("Sakar");
         }
     }
+
+    
 
 }
